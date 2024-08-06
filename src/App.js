@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TextToSpeech from './components/tts';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-header flex mt-12">
+        <h1 className="mx-auto text-5xl font-bold p-4">🔇...off!</h1>
       </header>
+      <main className="p-4">
+        <TextToSpeech />
+      </main>
     </div>
   );
 }
